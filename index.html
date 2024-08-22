@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ImGeoDet: General-purpose Geometry-aware Image-based 3D Object Detection">
-  <meta name="keywords" content="ImGeoDet, Single-view 3D Object Detection, Multi-view 3D Object Detection">
+        content="3DGeoDet: General-purpose Geometry-aware Image-based 3D Object Detection">
+  <meta name="keywords" content="3DGeoDet, Single-view 3D Object Detection, Multi-view 3D Object Detection">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ImGeoDet: General-purpose Geometry-aware Image-based 3D Object Detection</title>
+  <title>3DGeoDet: General-purpose Geometry-aware Image-based 3D Object Detection</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -81,7 +81,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title" style="color:rgba(74, 77, 163, 0.797)">ImGeoDet <br>
+          <h1 class="title is-2 publication-title" style="color:rgba(74, 77, 163, 0.797)">3DGeoDet <br>
             <p class="title is-3 publication-title">General-purpose Geometry-aware Image-based 3D Object Detection</p>
           </h1>
           <h1 class="title is-4" style="color: #5c5c5c;">Under Review, 2024</h1>
@@ -203,7 +203,7 @@
             <img src="static/images/compare_visualization_varying_views.png">
               <img src="static/images/framework_compare_version2.png">
           
-            <p><strong>Performance of our proposed <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet.</b></strong> (a) We visualize the performance of different methods in terms of mAP@50 and mAP@25 utilizing varying number of views during inference stage on ScanNetV2 validation split. <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> achieves the best performance compared to existing methods for all view configurations. (b) <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> is trained end-to-end with supervision from ground truth 3D bounding boxes and depth maps (optional), whereas CN-RMA employs a super complex training strategy which requires ground truth TSDF volume and 3D bounding boxes.</p>
+            <p><strong>Performance of our proposed <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet.</b></strong> (a) We visualize the performance of different methods in terms of mAP@50 and mAP@25 utilizing varying number of views during inference stage on ScanNetV2 validation split. <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> achieves the best performance compared to existing methods for all view configurations. (b) <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> is trained end-to-end with supervision from ground truth 3D bounding boxes and depth maps (optional), whereas CN-RMA employs a super complex training strategy which requires ground truth TSDF volume and 3D bounding boxes.</p>
         </div>
     </div>
     <div class="container is-max-desktop">
@@ -212,7 +212,7 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3"><b style="color:rgba(74, 77, 163, 0.797)">Abstract</b></h2>
                 <div class="content has-text-justified">
-                    <p>This paper proposes <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b></strong>, a novel geometry-aware 3D object detection approach from <b>single-view or multi-view</b> posed RGB images of indoor scenes. The key challenge for image-based 3D object detection tasks is the lack of 3D geometry cues, which leads to ambiguity in establishing correspondences between images and 3D representations. To tackle this problem, ImGeoDet utilizes depth information predicted by a light-weight depth estimation network to generate efficient 3D geometric representation to guide the network. Specifically, We utilize the predicted depth information to learn voxel occupancy and optimize the voxelized 3D feature volume accordingly. To further enhance the 3D awareness of the feature volume, we integrate it with an implicit 3D representation, truncated signed distance function. While improving the comprehension of 3D geometry by utilizing 3D representation, our approach retains the ability to achieve end-to-end training. Our approach surpasses the performance of state-of-the-art image-based methods by achieving a <b>9.0 mAP@0.5</b> improvement on the <b>SUN RGB-D benchmark</b> and a <b>3.3 mAP@0.5</b> improvement on the <b>ScanNetV2 dataset</b>.</p>
+                    <p>This paper proposes <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b></strong>, a novel geometry-aware 3D object detection approach from <b>single-view or multi-view</b> posed RGB images of indoor scenes. The key challenge for image-based 3D object detection tasks is the lack of 3D geometry cues, which leads to ambiguity in establishing correspondences between images and 3D representations. To tackle this problem, 3DGeoDet utilizes depth information predicted by a light-weight depth estimation network to generate efficient 3D geometric representation to guide the network. Specifically, We utilize the predicted depth information to learn voxel occupancy and optimize the voxelized 3D feature volume accordingly. To further enhance the 3D awareness of the feature volume, we integrate it with an implicit 3D representation, truncated signed distance function. While improving the comprehension of 3D geometry by utilizing 3D representation, our approach retains the ability to achieve end-to-end training. Our approach surpasses the performance of state-of-the-art image-based methods by achieving a <b>9.0 mAP@0.5</b> improvement on the <b>SUN RGB-D benchmark</b> and a <b>3.3 mAP@0.5</b> improvement on the <b>ScanNetV2 dataset</b>.</p>
                 </div>
             </div>
         </div>
@@ -226,20 +226,20 @@
         <div class="column is-full-width">
             <h4 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">Results on ScanNetV2 Benchmark</b></h4>
             <div class="content has-text-justified">
-                Our <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> achieves state-of-the-art performance on ScanNetV2 benchmark. Specifically, compared to the point cloud-based method VoteNet, our method achieves better results using only 50 views of images. Red indicates the best performance and blue indicates the second best performance.
+                Our <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> achieves state-of-the-art performance on ScanNetV2 benchmark. Specifically, compared to the point cloud-based method VoteNet, our method achieves better results using only 50 views of images. Red indicates the best performance and blue indicates the second best performance.
             </div>
             <img src="static/images/scannetv2_sota.png" alt="ScanNetV2 Benchmark" width="100%">
             <hr style="margin-top: 1em;">
 
             <div class="content has-text-justified">
-              Our <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> outperforms state-of-the-art methods for all number of testing views (Note that we use 20 views for training for all methods). Red indicates the best performance and blue indicates the second best performance.
+              Our <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> outperforms state-of-the-art methods for all number of testing views (Note that we use 20 views for training for all methods). Red indicates the best performance and blue indicates the second best performance.
           </div>
           <img src="static/images/scannetv2_varying_views.png" alt="ScanNetV2 Benchmark" width="100%">
           <hr style="margin-top: 1em;">
 
             <h4 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">ScanNetV2 Visualization Results</b></h4>
             <div class="content has-text-justified">
-                We visualize several representative examples of <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> on ScanNetV2 validation set, covering various indoor environments such as living rooms, bedrooms, bathrooms, kitchens and libraries. 
+                We visualize several representative examples of <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> on ScanNetV2 validation set, covering various indoor environments such as living rooms, bedrooms, bathrooms, kitchens and libraries. 
             </div>
           
             <div class="column  has-text-centered">
@@ -440,7 +440,7 @@
             
             <hr style="margin-top: 1em;">
             <h3 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">ScanNetV2 Visualization Results Compared with SOTA Approaches</b></h3>
-            <p>We compare <b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> with CN-RMA on ScanNetV2 validation set. Left is our result and right is the result from CN-RMA.</p>
+            <p>We compare <b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> with CN-RMA on ScanNetV2 validation set. Left is our result and right is the result from CN-RMA.</p>
             <br>
 
             <div class="columns is-vcentered">
@@ -505,7 +505,7 @@
             </div>     
             <hr style="margin-top: 1em;">
             <h3 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">Results on SUN RGB-D Benchmark</b></h3>
-            <p><b style="color:rgba(74, 77, 163, 0.797)">ImGeoDet</b> outperforms ImvoxelNet by 25.4% and 73.5% in mAP@0.25 and mAP0.5. Moreover, it significantly narrows down the performance gap between the monocular detection methods and point cloud-based detection methods (VoteNet).</p>
+            <p><b style="color:rgba(74, 77, 163, 0.797)">3DGeoDet</b> outperforms ImvoxelNet by 25.4% and 73.5% in mAP@0.25 and mAP0.5. Moreover, it significantly narrows down the performance gap between the monocular detection methods and point cloud-based detection methods (VoteNet).</p>
             <br> 
             <img src="static/images/sunrgbd_benchmark.png" alt="SUN RGB-D Benchmark" width="100%">
             <hr style="margin-top: 1em;">
